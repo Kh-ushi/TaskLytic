@@ -1,0 +1,13 @@
+.PartTwo{
+    padding: 1rem;
+}
+
+.PartTwo .main-context{
+    margin-top: 1rem; 
+    text-align: center;  
+}
+
+.PartTwo .main-context img{
+    width: 700px;
+    height: 700px;
+}

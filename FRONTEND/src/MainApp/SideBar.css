@@ -1,0 +1,33 @@
+
+.SideBar{
+    width: 30px;
+    height: 93vh;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    left: 5px;
+    bottom:3px;
+    top: 3px;
+   border-radius:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.SideBar .upperIcons{
+    height: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+
+}
+
+.SideBar .lowerIcons{
+    height: 30%;
+    display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}

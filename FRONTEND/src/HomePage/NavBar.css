@@ -1,0 +1,133 @@
+* {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.leftPart{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.leftPart h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.center{
+    display: flex;
+    gap: 2rem;
+}
+.center h3{
+    color: #413e3e;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.center h3:hover {
+    color: #007bff;
+}
+
+.rightPart{
+    display: flex;
+    gap:1rem;
+}
+
+.rightPart button {
+    height: 40px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.rightPart button:first-child {
+    background: white;
+    border: 1px solid #007bff;
+    color: #007bff;
+}
+
+.rightPart button:last-child {
+    background: #007bff;
+    color: white;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .center{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .rightPart{
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .leftPart h2{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media(max-width: 480px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .center {
+        display: none;
+    }
+
+    .rightPart {
+        display: none;
+    }
+
+    .open{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .mobile-menu-icon{
+        display: flex;
+    }
+
+    .navbar-open{
+       flex-direction: column;
+       align-items: flex-start;
+    }
+}
